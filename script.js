@@ -54,7 +54,7 @@ function moveOutcome() {
     let squares = document.querySelectorAll(".grid div");
     if (checkForHits(squares)) {
         // check if the snake hit the wall and restart the game
-        alert("you hit something");
+        // alert("you hit something");
         popup.style.display = "flex";
         return clearInterval(interval);
     } else {

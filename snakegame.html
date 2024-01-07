@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nokia 3310 Snack</title>
+    <title>Snack Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
     <!-- TITLE -->
-    <h1>Nokia 3310 snake</h1>
+    <h1 class="title">The Old Snack Game</h1>
 
     <!-- SCORE DISPLAY -->
-    <div class="scoreDisplay"></div>
+    <div class="score">
+        <div class="scoreDisplay"></div>
+    </div>
 
     <!-- GAME SPACE 10x10 -->
     <div class="grid"></div>
 
     <!-- BUTTONS -> for phone users -->
     <div class="button">
-        <button class="top">top</button>
-        <button class="bottom">bottom</button>
-        <button class="left">left</button>
-        <button class="right">right</button>
+        <div class="key hidden"><i></i></div>
+        <div class="key top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+        <div class="key hidden"><i></i></div>
+        <div class="key left"><i class="fa fa-arrow-left"></i></div>
+        <div class="key bottom"><i class="fa fa-arrow-down"></i></div>
+        <div class="key right"><i class="fa fa-arrow-right"></i></div>
     </div>
-    
+   
     <!-- POP UP TO PLAY AGAIN -->
     <div class="popup">
-        <button class="playAgain">play Again</button>
+        <button class="playAgain">Play Again!</button>
     </div>
+    
 
 </body>
 <script src="script.js"></script>

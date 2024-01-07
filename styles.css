@@ -1,11 +1,19 @@
 body {
-    background: rgb(212, 211, 211);
+    background: linear-gradient(to right, #58bad5, #bababa);;
+    height: 100%;
+    font-family: system-ui;
+}
+
+.title {
+    font-family: 'Press Start 2P', system-ui;
+    color: rgb(49, 74, 97);
+    text-align: center;
 }
 
 .grid {
     width: 200px;
     height: 200px;
-    border: 1px solid red;
+    border: 3px solid rgb(49, 74, 97);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -14,12 +22,12 @@ body {
 .grid div {
     width: 20px;
     height: 20px;
-    /*border:1px black solid;
-    box-sizing:border-box*/
+    border:1px rgba(49, 74, 97, 35%) dashed;
+    box-sizing:border-box;
 }
 
 .snake {
-    background: blue;
+    background: rgb(49, 74, 97);
 }
 
 .apple {
@@ -27,14 +35,75 @@ body {
     border-radius: 20px;
 }
 
+/* SCORE */
+.score {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.scoreDisplay {
+    background: rgba(49, 74, 97, 0.6);
+    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
+    width: 70px;
+    margin: auto;
+}
+
+/* CONTROL BUTTONS */
+.button {
+    font-family: 'Lato', sans-serif;    
+    text-align: center;
+    width: 125px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    gap: 10px;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.key {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    background: rgba(49, 74, 97, 0.6);
+    color: #dedede;
+    font-size: 20px; 
+    transition: all .05s linear;
+    &:active {
+        text-shadow: 0 0 10px whitesmoke, 0 0 10px whitesmoke, 0 0 20px whitesmoke;    
+        transform: translate(0, 1px);
+    }
+    user-select: none;
+}
+
+.hidden {
+    background: none;
+    font: none;
+    cursor: default;
+}
+
+.pressed {
+    text-shadow: 0 0 10px white;
+    transform: translate(0, 1px);
+}
+
+/* PLAY AGAIN BUTTON */
 .popup {
-    background: rgb(32, 31, 31);
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    top: 100px;
-    left: 100px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.playAgain {
+    background: rgba(49, 74, 97, 0.6);
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: whitesmoke;
 }
