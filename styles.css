@@ -55,10 +55,10 @@ body {
 .button {
     font-family: 'Lato', sans-serif;    
     text-align: center;
-    width: 125px;
-    height: 80px;
+    width: 155px;
+    height: 100px;
     display: grid;
-    grid-template-columns: 35px 35px 35px;
+    grid-template-columns: 45px 45px 45px;
     gap: 10px;
     margin: 10px auto;
     align-items: center;
@@ -66,8 +66,8 @@ body {
 
 .key {
     cursor: pointer;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     padding: 5px;
     text-align: center;
     background: rgba(49, 74, 97, 0.6);
