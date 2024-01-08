@@ -107,3 +107,33 @@ body {
     border: none;
     color: whitesmoke;
 }
+
+/* Source Code and Social Media */
+.credits {
+    color: #000f1999;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.socials {
+    color: #000f1999;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.icon {
+    margin: 3px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000f1999;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #314a6199;
+}
+
