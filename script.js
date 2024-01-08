@@ -42,7 +42,7 @@ function startGame() {
     //random apple
     direction = 1; // refers to where the snake is headed
     scoreDisplay.innerHTML = score;
-    intervalTime = 1000; // sets the time it takes for the snake to move around
+    intervalTime = 700; // sets the time it takes for the snake to move around
     currentSnake = [2, 1, 0]; // where exactly on the grid the snake will be
     currentIndex = 0;
     currentSnake.forEach((index) => squares[index].classList.add("snake")); // To display our snake on the screen, we will loop over
